@@ -9,15 +9,8 @@ namespace January.Controllers
 {
     public class HomeController : Controller
     {
-        private ITopicRepository repo;
-
-        public HomeController(ITopicRepository repo)
-        {
-            this.repo = repo;
-        }
         public IActionResult Index()
         {
-            var topic = repo.Get(1);
             return View(topic);
         }
 
