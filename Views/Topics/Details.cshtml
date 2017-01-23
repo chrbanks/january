@@ -1,0 +1,17 @@
+@model January.Models.Topic
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Topic</h4>
+    <hr />
+    <h5>@Html.DisplayFor(model => model.Title)</h5>
+</div>
+<div>
+    <a asp-action="edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
