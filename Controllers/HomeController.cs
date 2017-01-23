@@ -11,7 +11,7 @@ namespace January.Controllers
     {
         public IActionResult Index()
         {
-            return View(topic);
+            return View();
         }
 
         public IActionResult About()
